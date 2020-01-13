@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,500&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: #ffffff; 
+    overflow: hidden;   
+}
+ 
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margine: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.bg-promo {
+    background-color: #eff0f2;
+    background-size: cover;
+}
+
+// bg-promo
+// header
+
+header {
+    height: 120px;
+
+.logo {
+    border-style: solid 3px;
+    text-align: justify; 
+}
+}
+
