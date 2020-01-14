@@ -343,7 +343,7 @@ header .container {
 }
  
     
-.wr-about .info-about .mini-header {
+.wr-about .info-about h2 {
     text-align: left;
     font-family: merri-bold;
     font-weight: bold;
@@ -515,13 +515,22 @@ h3 {
     max-width: 1200px;
     margin-bottom: 10px;
 }
-
- .works img {
-    width: 100%;
+.works .picture {
+    width: 32%;
+    display: inline-block;
+    margin: 3px;
     width: 360px;
-    height: 340px;
+    height: 100%;
+
+}
+
+
+ .works .picture img {
+    width: 100%;
+       
     object-fit: cover;
 }
+
 
 .works .picture {
     width: 32%;
@@ -599,12 +608,10 @@ h3 {
 }
 
 @media all and (max-width:400px){
-    .works img {
-      height: 130px;
-    }    
+    
 
     .fancybox-container  *{
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -912,7 +919,7 @@ div[class^=service] {
         font-size: 30px;
     }
     .main {
-        width: 70%;
+        width: 90%;
  }
     .main .h-main {
      font-size: 14px;
@@ -921,6 +928,7 @@ div[class^=service] {
     }
 
     .main p {
+        width: 85%;
         font-size: 14px;
         letter-spacing: 1px;
     line-height: 27px;
@@ -928,13 +936,30 @@ div[class^=service] {
 }
 
     .service-2 .main {
-        width: 70%;
+        width: 90%;
     }
 
     .service-3 .main {
-        width: 70%;
+        width: 90%;
     }
  }
+
+ @media all and (max-width:350px) {
+     .main {
+         width: 80%;
+     }
+
+     .service-2 .main {
+        width: 80%;
+    }
+
+    .service-3 .main {
+        width: 80%;
+    }
+
+ }
+
+
 
  
 
@@ -998,7 +1023,7 @@ div[class^=service] {
         position: absolute;
         border: solid;
         background-color: #71f6eb;
-        width: 310px;
+        width: 295px;
         height: 190px;
         margin-top: -208px;
         margin-left: 22px;
@@ -1104,7 +1129,13 @@ div[class^=service] {
         flex-direction: column;
         justify-content: center;
         align-items: center ;
-    }
+            padding-top: 10px;
+            padding-bottom: 10px;
+      } 
+      .wr-small-team  p {
+        margin-bottom: 30px;
+
+      }
     .wr-small-team .team {
         margin-left: 20px;
     } 
@@ -1555,8 +1586,7 @@ div[class^=service] {
  }
 
  .wr-form .form {
-     background-color: #000;
-     opacity: 0.9;
+     background-color: rgba(0, 0, 0, 0.9);
      max-width: 607px;
      width: 100%;
      padding-top: 47px;
@@ -1569,7 +1599,7 @@ div[class^=service] {
  .form .input {
      border: solid;
      border-width: 0 0 0.5px 0;
-     background-color: #000;
+     background-color: rgba(0, 0, 0, 0);
      font-family: merri-regular, sans-serif;
      font-size: 13px;
      font-weight: 50; 
@@ -1583,8 +1613,7 @@ div[class^=service] {
  .form .input-m { 
      border: solid;
     border-width: 0 0 0.5px 0;
-    background-color: #000;
-    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0);
     font-family: merri-regular, sans-serif;
     font-size: 13px;
     font-weight: 50; 
@@ -1727,7 +1756,7 @@ width: 200px;
         margin-bottom: 10px;
   }
    .form .input {
-    width: 250px;
+    width: 240px;
   }   
   .wr-form .info {
       width: 270px;
@@ -1788,7 +1817,7 @@ width: 200px;
      cursor: pointer;
  }
 
- @media all and (max-width:350px) {
+ @media all and (max-width:800px) {
     footer .container{
         padding-top: 20px;
         padding-bottom: 20px;
