@@ -522,7 +522,7 @@ h3 {
 }
 
 .works .picture img {
-    
+    height: 3400px;
     width: 100%;
     object-fit: cover;
     
